@@ -6,6 +6,7 @@ import yours from "./assets/img/yours.png";
 import people from "./assets/img/people.png";
 import become from "./assets/img/become.png";
 import start from "./assets/img/start.png";
+import icon from "./assets/img/icon.png";
 
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
@@ -88,13 +89,13 @@ function App() {
         <h1 className="mt-[196px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c]">
           Get started with Union
         </h1>
-        <div className="flex flex-col sm:flex-row mt-[148px]">
+        <div className="flex flex-col sm:flex-row">
           <Card>
-            <img alt="card" src={become} />
-            <p className="text-[#44403c] text-[20px] mb-[20px] font-medium w-[50%] max-w-[50%]">
+            <img alt="card" src={become} className="h-[106px] w-auto" />
+            <p className="text-[#44403c] text-[24px] mb-[12px] mt-[24px] font-normal text-center">
               Become a Union member
             </p>
-            <p className="text-center text-[16px] text-[#787172] mg-[8px]">
+            <p className="text-center px-[30px] text-[16px] text-[#787172] mb-[8px]">
               Get vouches to borrow, lend to friends and vote to define the
               future of Union.
             </p>
@@ -103,15 +104,31 @@ function App() {
             </button>
           </Card>
           <Card>
-            <img alt="card" src={start} />
-            <p className="text-[#44403c] text-[20px] mb-[20px] font-medium w-[50%] max-w-[50%]">
+            <img alt="card" src={start} className="h-[106px] w-auto" />
+            <p className="text-[#44403c] text-[24px] mb-[12px] mt-[24px] font-normal text-center">
               Start building with Union
             </p>
-            <p className="text-center text-[16px] text-[#787172] mg-[8px]">
+            <p className="text-center px-[30px] text-[16px] text-[#787172] mb-[8px]">
               Build credit reliant financial tools on top of Ethereum’s
               crypto-native credit protocol
             </p>
+            <button className="rounded-xl mt-[16px] text-[#000] w-[100%] min-h-[48px] text-[14px] px-[24px] py-[12px] h-[24px]">
+              Build with Union
+            </button>
           </Card>
+        </div>
+        <img alt="icon" src={icon} className="mt-[160px] mx-auto" />
+        <div className="flex justify-center gap-x-10 mt-[20px] text-[13px] text-[#565461]">
+          <a>Docs</a>
+          <a>Governance</a>
+          <a>Community</a>
+          <a>App</a>
+        </div>
+        <div className="flex justify-center gap-x-10 mt-[20px] mb-[80px] text-[13px] text-[#c4c4c4]">
+          <a>Github</a>
+          <a>Discord</a>
+          <a>Twitter</a>
+          <a>Medium</a>
         </div>
       </div>
     </div>
