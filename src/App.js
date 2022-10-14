@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import imgOne from "./assets/img/Screenshot_1.png";
 import open from "./assets/img/open.png";
@@ -12,6 +13,27 @@ import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 
 function App() {
+  const [tab, setTab] = useState(0);
+  const [largeTab, setLargeTab] = useState(0);
+
+  let array = [
+    {
+      str: "From one friend to another, from a parent to their child or from a business to an individual",
+      path: "https://union.finance/images/one-to-one.png",
+    },
+    {
+      str: "A contract or DAO to it’s members, a professional underwriter to clients or a VC to startups",
+      path: "https://union.finance/images/one-to-many.png",
+    },
+    {
+      str: "Many people investing in a startup, smart contract/DAO or Crowdfunding",
+      path: "https://union.finance/images/many-to-one.png",
+    },
+    {
+      str: "From members of one DAO to another, a sorority as a credit union, friends and family as a bank",
+      path: "https://union.finance/images/many-to-many.png",
+    },
+  ];
   return (
     <div className="flex justify-center tracking-tighter px-[10px]">
       <div className="font-sans max-w-[944px] w-[100%]">
@@ -31,7 +53,7 @@ function App() {
             Open app
           </button>
         </div>
-        <div className="flex flex-col sm:flex-row mt-[148px]">
+        <div className="flex flex-col sm:flex-row mt-[148px] gap-x-3">
           <Card>
             <img alt="card" src={open} />
             <p className="text-[#44403c] text-[20px] mb-[20px] font-medium">
@@ -86,7 +108,65 @@ function App() {
         <h1 className="mt-[196px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c]">
           Credit is more fluid with Union
         </h1>
-        <h1 className="mt-[196px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c]">
+        <div className="flex flex-col max-w-[560px] mx-auto">
+          <img
+            src={array[tab].path}
+            alt="one-to-one-relationship"
+            className="w-[100%]"
+          />
+          <div className="flex flex-col max-w-[400px] mb-[32px] mx-auto">
+            <p className="text-center text-[16px] text-[#78716c] mg-[8px]">
+              {array[tab].str}
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-center gap-x-7">
+          <button
+            onClick={(e) => setTab(0)}
+            className={
+              "btnSmall" +
+              (tab === 0
+                ? " bg-[#2563eb] text-[#fff]"
+                : " bg-[#fff] text-[#000]")
+            }
+          >
+            One to One
+          </button>
+          <button
+            onClick={(e) => setTab(1)}
+            className={
+              "btnSmall" +
+              (tab === 1
+                ? " bg-[#2563eb] text-[#fff]"
+                : " bg-[#fff] text-[#000]")
+            }
+          >
+            One to Many
+          </button>
+          <button
+            onClick={(e) => setTab(2)}
+            className={
+              "btnSmall" +
+              (tab === 2
+                ? " bg-[#2563eb] text-[#fff]"
+                : " bg-[#fff] text-[#000]")
+            }
+          >
+            Many to One
+          </button>
+          <button
+            onClick={(e) => setTab(3)}
+            className={
+              "btnSmall" +
+              (tab === 3
+                ? " bg-[#2563eb] text-[#fff]"
+                : " bg-[#fff] text-[#000]")
+            }
+          >
+            Many to Many
+          </button>
+        </div>
+        <h1 className="mt-[146px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c]">
           Get started with Union
         </h1>
         <div className="flex flex-col sm:flex-row">
@@ -99,7 +179,15 @@ function App() {
               Get vouches to borrow, lend to friends and vote to define the
               future of Union.
             </p>
-            <button className="rounded-xl mt-[16px] bg-[#2563eb] text-[#fff] w-[100%] min-h-[48px] text-[14px] px-[24px] py-[12px] h-[24px]">
+            <button
+              onClick={(e) => setLargeTab(0)}
+              className={
+                "btnLarge" +
+                (largeTab === 0
+                  ? " bg-[#2563eb] text-[#fff]"
+                  : " bg-[#fff] text-[#000]")
+              }
+            >
               Open App
             </button>
           </Card>
@@ -112,23 +200,31 @@ function App() {
               Build credit reliant financial tools on top of Ethereum’s
               crypto-native credit protocol
             </p>
-            <button className="rounded-xl mt-[16px] text-[#000] w-[100%] min-h-[48px] text-[14px] px-[24px] py-[12px] h-[24px]">
+            <button
+              onClick={(e) => setLargeTab(1)}
+              className={
+                "btnLarge" +
+                (largeTab === 1
+                  ? " bg-[#2563eb] text-[#fff]"
+                  : " bg-[#fff] text-[#000]")
+              }
+            >
               Build with Union
             </button>
           </Card>
         </div>
         <img alt="icon" src={icon} className="mt-[160px] mx-auto" />
         <div className="flex justify-center gap-x-10 mt-[20px] text-[13px] text-[#565461]">
-          <a>Docs</a>
-          <a>Governance</a>
-          <a>Community</a>
-          <a>App</a>
+          <span>Docs</span>
+          <span>Governance</span>
+          <span>Community</span>
+          <span>App</span>
         </div>
         <div className="flex justify-center gap-x-10 mt-[20px] mb-[80px] text-[13px] text-[#c4c4c4]">
-          <a>Github</a>
-          <a>Discord</a>
-          <a>Twitter</a>
-          <a>Medium</a>
+          <span>Github</span>
+          <span>Discord</span>
+          <aspan>Twitter</aspan>
+          <span>Medium</span>
         </div>
       </div>
     </div>
