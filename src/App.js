@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import imgOne from "./assets/img/Screenshot_1.png";
 import open from "./assets/img/open.png";
