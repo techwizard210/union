@@ -17,7 +17,8 @@ const Navbar = () => {
         <div>
           <a
             href="https://wrapped-nameservice.netlify.app/"
-            rel="norefferer"
+            target="_blank"
+            rel="noreferrer"
             className="text-[#2563eb] inline-block"
           >
             Open App
