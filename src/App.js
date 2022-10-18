@@ -49,9 +49,11 @@ function App() {
             to build on programmable credit lines, giving people and robots the
             ability to underwrite and borrow.
           </p>
-          <button className="rounded-xl bg-[#2563eb] text-[#fff] w-[200px] min-h-[48px] text-[14px] px-[24px] py-[12px] h-[24px]">
-            Open app
-          </button>
+          <Link to="https://wrapped-nameservice.netlify.app/">
+            <button className="rounded-xl bg-[#2563eb] text-[#fff] w-[200px] min-h-[48px] text-[14px] px-[24px] py-[12px] h-[24px]">
+              Open app
+            </button>
+          </Link>
         </div>
         <div className="flex flex-col sm:flex-row mt-[148px] gap-x-3">
           <Card>
