@@ -15,7 +15,13 @@ const Navbar = () => {
           Docs
         </p>
         <div>
-          <p className="text-[#2563eb] inline-block">Open App</p>
+          <a
+            href="https://wrapped-nameservice.netlify.app/"
+            rel="norefferer"
+            className="text-[#2563eb] inline-block"
+          >
+            Open App
+          </a>
           <img alt="arrow" src={arrowIcon} className="w-[24px] inline-block" />
         </div>
       </div>

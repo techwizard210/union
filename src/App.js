@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 import "./App.css";
 import imgOne from "./assets/img/Screenshot_1.png";
@@ -55,7 +54,7 @@ function App() {
             href="https://wrapped-nameservice.netlify.app/"
             target="_blank"
             rel="noreferrer"
-            className="rounded-xl bg-[#2563eb] text-[#fff] w-[200px] min-h-[48px] text-[14px] px-[24px] py-[12px] h-[24px]"
+            className="rounded-xl bg-[#2563eb] text-[#fff] w-[200px] min-h-[48px] text-[14px] px-[24px] py-[12px] h-[24px] text-center"
           >
             Open app
           </a>
