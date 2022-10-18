@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import "./App.css";
 import imgOne from "./assets/img/Screenshot_1.png";
 import open from "./assets/img/open.png";
@@ -49,11 +51,14 @@ function App() {
             to build on programmable credit lines, giving people and robots the
             ability to underwrite and borrow.
           </p>
-          <Link to="https://wrapped-nameservice.netlify.app/">
-            <button className="rounded-xl bg-[#2563eb] text-[#fff] w-[200px] min-h-[48px] text-[14px] px-[24px] py-[12px] h-[24px]">
-              Open app
-            </button>
-          </Link>
+          <a
+            href="https://wrapped-nameservice.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-xl bg-[#2563eb] text-[#fff] w-[200px] min-h-[48px] text-[14px] px-[24px] py-[12px] h-[24px]"
+          >
+            Open app
+          </a>
         </div>
         <div className="flex flex-col sm:flex-row mt-[148px] gap-x-3">
           <Card>
