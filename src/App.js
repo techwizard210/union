@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import "./App.css";
-import imgOne from "./assets/img/Screenshot_1.png";
+import imgOne from "./assets/img/main.jpg";
 import open from "./assets/img/open.png";
 import efficient from "./assets/img/efficient.png";
 import yours from "./assets/img/yours.png";
