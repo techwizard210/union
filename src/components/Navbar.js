@@ -1,12 +1,15 @@
 import React from "react";
 
-import logo from "../assets/img/logo.png";
+import logo from "../assets/img/eth.png";
 import arrowIcon from "../assets/img/arrow.svg";
 
 const Navbar = () => {
   return (
     <div className="flex flex-row justify-between py-[43px] px-[34px]">
-      <img alt="logo" src={logo} />
+      <div className="flex items-center font-medium">
+        <img alt="logo" src={logo} className="w-[50px]" />
+        <p className="text-[25px]">Union</p>
+      </div>
       <div className="flex flex-row gap-x-6 items-center">
         <p className="text-navColor invisible sm:visible text-navSize leading-6">
           Blog
