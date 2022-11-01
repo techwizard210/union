@@ -5,10 +5,14 @@ import imgOne from "./assets/img/main.jpg";
 import open from "./assets/img/open.png";
 import efficient from "./assets/img/efficient.png";
 import yours from "./assets/img/yours.png";
-import people from "./assets/img/people.png";
-import become from "./assets/img/become.png";
-import start from "./assets/img/start.png";
+import people from "./assets/img/people.jpg";
+import become from "./assets/img/become.jpg";
+import start from "./assets/img/start.jpg";
 import icon from "./assets/img/icon.png";
+import oneToOne from "./assets/img/one-to-one.png";
+import oneToMany from "./assets/img/one-to-many.png";
+import manyToOne from "./assets/img/many-to-one.png";
+import manyToMany from "./assets/img/many-to-many.png";
 
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
@@ -20,19 +24,19 @@ function App() {
   let array = [
     {
       str: "From one friend to another, from a parent to their child or from a business to an individual",
-      path: "https://union.finance/images/one-to-one.png",
+      path: oneToOne,
     },
     {
       str: "A contract or DAO to it’s members, a professional underwriter to clients or a VC to startups",
-      path: "https://union.finance/images/one-to-many.png",
+      path: oneToMany,
     },
     {
       str: "Many people investing in a startup, smart contract/DAO or Crowdfunding",
-      path: "https://union.finance/images/many-to-one.png",
+      path: manyToOne,
     },
     {
       str: "From members of one DAO to another, a sorority as a credit union, friends and family as a bank",
-      path: "https://union.finance/images/many-to-many.png",
+      path: manyToMany,
     },
   ];
   return (
