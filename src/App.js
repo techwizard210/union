@@ -45,7 +45,7 @@ function App() {
         <Navbar />
         <div className="flex flex-col gap-y-6 max-w-[605px] w-[100%] mx-auto items-center">
           <img alt="img1" src={imgOne}></img>
-          <p className="text-[36px] font-medium text-[#44403c]">
+          <p className="text-[36px] font-medium text-[#44403c] text-center">
             The global credit protocol
           </p>
           <p className="text-center text-[#78716c] leading-6">
