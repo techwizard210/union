@@ -11,12 +11,20 @@ const Navbar = () => {
         <p className="text-[25px]">Union</p>
       </div>
       <div className="flex flex-row gap-x-6 items-center">
-        <p className="text-navColor invisible sm:visible text-navSize leading-6">
-          Blog
-        </p>
-        <p className="text-navColor invisible sm:visible text-navSize leading-6">
-          Docs
-        </p>
+        {/* <p className="text-navColor invisible sm:visible text-navSize leading-6">
+          Doc
+        </p> */}
+        <a
+          href="https://docs.wrapped.domains/"
+          target="_blank"
+          rel="noreferrer"
+          className="text-navColor invisible sm:visible text-navSize leading-6"
+        >
+          Doc
+        </a>
+        {/* <p className="text-navColor invisible sm:visible text-navSize leading-6">
+          FAQs
+        </p> */}
         <div>
           <a
             href="https://wrapped-nameservice.netlify.app/"

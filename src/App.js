@@ -1,8 +1,14 @@
 import { useState } from "react";
 
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
+
 import "./App.css";
 import imgOne from "./assets/img/main.png";
-import open from "./assets/img/open.png";
+import openImg from "./assets/img/open.png";
 import efficient from "./assets/img/efficient.png";
 import yours from "./assets/img/yours.png";
 import people from "./assets/img/people.jpg";
@@ -20,6 +26,11 @@ import Card from "./components/Card";
 function App() {
   const [tab, setTab] = useState(0);
   const [largeTab, setLargeTab] = useState(0);
+  const [open, setOpen] = useState(1);
+
+  const handleOpen = (value) => {
+    setOpen(open === value ? 0 : value);
+  };
 
   let array = [
     {
@@ -39,6 +50,42 @@ function App() {
       path: manyToMany,
     },
   ];
+
+  let accordions = [
+    {
+      header: "Whats wrapped domains?",
+      body: "",
+    },
+    {
+      header: "Is Wrapped Domains a web3 or web2 service?",
+      body: "",
+    },
+    {
+      header: "How much are wrapped domains?",
+      body: "",
+    },
+    {
+      header: "Why are names registered as hashes?",
+      body: "",
+    },
+    {
+      header: "Which wallets and dapps support Wrapped Domains so far?",
+      body: "",
+    },
+    {
+      header: "Why should I use a .weth address?",
+      body: "",
+    },
+    {
+      header: "Will I be charged annually for my .weth domain?",
+      body: "",
+    },
+    {
+      header: "How can I sell my .weth web3 domain?",
+      body: "To do this, you should use a secondary market such as Opensea , Looksrare",
+    },
+  ];
+
   return (
     <div className="flex justify-center tracking-tighter px-[10px]">
       <div className="font-sans max-w-[944px] w-[100%]">
@@ -46,13 +93,13 @@ function App() {
         <div className="flex flex-col gap-y-6 max-w-[605px] w-[100%] mx-auto items-center">
           <img alt="img1" src={imgOne}></img>
           <p className="text-[36px] font-medium text-[#44403c] text-center">
-            The global credit protocol
+            The global web3 domains protocol
           </p>
           <p className="text-center text-[#78716c] leading-6">
-            Credit is more than a tool for speculation, it’s the mechanism by
-            which money turns into productive capital. Union enables developers
-            to build on programmable credit lines, giving people and robots the
-            ability to underwrite and borrow.
+            WENS has a simple mission of providing a decentralized and yet
+            affordable way to map domain names (represented as .WETH) to
+            on-chain data. Where on-chain data can be anything from a Ethereum
+            (ETH) address to IPFS CID, images, text, and more.
           </p>
           <a
             href="https://wrapped-nameservice.netlify.app/"
@@ -65,13 +112,13 @@ function App() {
         </div>
         <div className="flex flex-col sm:flex-row mt-[148px] gap-x-3">
           <Card>
-            <img alt="card" src={open} />
+            <img alt="card" src={openImg} />
             <p className="text-[#44403c] text-[20px] mb-[20px] font-medium">
               Open
             </p>
             <p className="text-center text-[16px] text-[#787172] mg-[8px]">
-              Union is open by default. This enables you to build on Union as
-              you see fit with no gatekeeping
+              WENS is open by default. This enables you to build on WENS as you
+              see fit with no gatekeeping
             </p>
           </Card>
           <Card>
@@ -80,8 +127,8 @@ function App() {
               Efficient
             </p>
             <p className="text-center text-[16px] text-[#787172] mg-[8px]">
-              Middlemen are removed from the equation. Borrowing and lending has
-              never been more efficient
+              Your domain is yours forever , WENS does not charge any renewal
+              fees.
             </p>
           </Card>
           <Card>
@@ -90,8 +137,8 @@ function App() {
               Yours
             </p>
             <p className="text-center text-[16px] text-[#787172] mg-[8px]">
-              Built and operated by the community. The future of Union is
-              defined by you
+              WENS is completely decentralized , its fully Built and operated by
+              the community. The future of WENS is defined by you
             </p>
           </Card>
         </div>
@@ -222,6 +269,20 @@ function App() {
               Build with Union
             </button>
           </Card>
+        </div>
+        <h1 className="mt-[146px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c]">
+          FAQs
+        </h1>
+        {/* <div className="flex flex-col sm:flex-row"> */}
+        <div className="px-[20px]">
+          {accordions.map((accordion, index) => (
+            <Accordion open={open === index + 1} key={index}>
+              <AccordionHeader onClick={() => handleOpen(index + 1)}>
+                {accordion.header}
+              </AccordionHeader>
+              <AccordionBody>{accordion.body}</AccordionBody>
+            </Accordion>
+          ))}
         </div>
         <img alt="icon" src={icon} className="mt-[160px] mx-auto" />
         <div className="flex justify-center gap-x-10 mt-[20px] text-[13px] text-[#565461]">
