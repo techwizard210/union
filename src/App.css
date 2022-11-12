@@ -4,7 +4,7 @@
 
 @layer components {
   .btnSmall {
-    @apply rounded-xl min-h-[48px] text-[16px] px-[21px] py-[8px] h-[24px];
+    @apply rounded-xl min-h-[48px] text-[16px] px-[21px] py-[8px];
   }
   .btnLarge {
     @apply rounded-xl mt-[16px] w-[100%] min-h-[48px] text-[14px] px-[24px] py-[12px] h-[24px];

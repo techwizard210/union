@@ -177,51 +177,55 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="flex justify-center gap-x-7">
-          <button
-            onClick={(e) => setTab(0)}
-            className={
-              "btnSmall" +
-              (tab === 0
-                ? " bg-[#2563eb] text-[#fff]"
-                : " bg-[#fff] text-[#000]")
-            }
-          >
-            One to One
-          </button>
-          <button
-            onClick={(e) => setTab(1)}
-            className={
-              "btnSmall" +
-              (tab === 1
-                ? " bg-[#2563eb] text-[#fff]"
-                : " bg-[#fff] text-[#000]")
-            }
-          >
-            One to Many
-          </button>
-          <button
-            onClick={(e) => setTab(2)}
-            className={
-              "btnSmall" +
-              (tab === 2
-                ? " bg-[#2563eb] text-[#fff]"
-                : " bg-[#fff] text-[#000]")
-            }
-          >
-            Many to One
-          </button>
-          <button
-            onClick={(e) => setTab(3)}
-            className={
-              "btnSmall" +
-              (tab === 3
-                ? " bg-[#2563eb] text-[#fff]"
-                : " bg-[#fff] text-[#000]")
-            }
-          >
-            Many to Many
-          </button>
+        <div className="flex flex-col sm:flex-row justify-center items-center">
+          <div className="">
+            <button
+              onClick={(e) => setTab(0)}
+              className={
+                "btnSmall" +
+                (tab === 0
+                  ? " bg-[#2563eb] text-[#fff]"
+                  : " bg-[#fff] text-[#000]")
+              }
+            >
+              One to One
+            </button>
+            <button
+              onClick={(e) => setTab(1)}
+              className={
+                "btnSmall" +
+                (tab === 1
+                  ? " bg-[#2563eb] text-[#fff]"
+                  : " bg-[#fff] text-[#000]")
+              }
+            >
+              One to Many
+            </button>
+          </div>
+          <div className="">
+            <button
+              onClick={(e) => setTab(2)}
+              className={
+                "btnSmall" +
+                (tab === 2
+                  ? " bg-[#2563eb] text-[#fff]"
+                  : " bg-[#fff] text-[#000]")
+              }
+            >
+              Many to One
+            </button>
+            <button
+              onClick={(e) => setTab(3)}
+              className={
+                "btnSmall" +
+                (tab === 3
+                  ? " bg-[#2563eb] text-[#fff]"
+                  : " bg-[#fff] text-[#000]")
+              }
+            >
+              Many to Many
+            </button>
+          </div>
         </div>
         <h1 className="mt-[146px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c]">
           Get started with Union
