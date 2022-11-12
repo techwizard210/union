@@ -146,7 +146,7 @@ function App() {
           <h1 className="text-[#3b82f6] font-medium text-[20px]">
             Credit is...
           </h1>
-          <h1 className="text-[48px] text-[#44403c] my-[8px] font-bold text-center leading-tight">
+          <h1 className="text-[36px] text-[#44403c] my-[8px] font-medium text-center leading-tight">
             “Exchanging present value for the possibility of future value”
           </h1>
         </div>
