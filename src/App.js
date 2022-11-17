@@ -7,8 +7,8 @@ import {
 } from "@material-tailwind/react";
 
 import "@fontsource/poppins";
-
 import "./App.css";
+import logo from "./assets/img/eth.png";
 import imgOne from "./assets/img/main.png";
 import openImg from "./assets/img/open.png";
 import efficient from "./assets/img/efficient.png";
@@ -165,7 +165,7 @@ function App() {
           </p>
         </div>
         <h1 className="mt-[196px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c] textFont">
-          Credit is more fluid with Union
+          Credit is more fluid with Wrapped Domains
         </h1>
         <div className="flex flex-col max-w-[560px] mx-auto">
           <img
@@ -230,17 +230,17 @@ function App() {
           </div>
         </div>
         <h1 className="mt-[146px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c] textFont">
-          Get started with Union
+          Get started with Wrapped Domains
         </h1>
         <div className="flex flex-col sm:flex-row">
           <Card>
             <img alt="card" src={become} className="h-[106px] w-auto" />
             <p className="text-[#44403c] text-[24px] mb-[12px] mt-[24px] font-normal text-center">
-              Become a Union member
+              Become a Wrapped Domains member
             </p>
             <p className="text-center px-[30px] text-[16px] text-[#787172] mb-[8px]">
               Get vouches to borrow, lend to friends and vote to define the
-              future of Union.
+              future of Wrapped Domains.
             </p>
             <button
               onClick={(e) => setLargeTab(0)}
@@ -257,7 +257,7 @@ function App() {
           <Card>
             <img alt="card" src={start} className="h-[106px] w-auto" />
             <p className="text-[#44403c] text-[24px] mb-[12px] mt-[24px] font-normal text-center">
-              Start building with Union
+              Start building with Wrapped Domains
             </p>
             <p className="text-center px-[30px] text-[16px] text-[#787172] mb-[8px]">
               Build credit reliant financial tools on top of Ethereum’s
@@ -272,7 +272,7 @@ function App() {
                   : " bg-[#fff] text-[#000]")
               }
             >
-              Build with Union
+              Build with Wrapped Domains
             </button>
           </Card>
         </div>
@@ -290,7 +290,7 @@ function App() {
             </Accordion>
           ))}
         </div>
-        <img alt="icon" src={icon} className="mt-[160px] mx-auto" />
+        <img alt="icon" src={logo} className="mt-[160px] w-[40px] mx-auto" />
         <div className="flex justify-center gap-x-10 mt-[20px] text-[13px] text-[#565461]">
           <span>Docs</span>
           <span>Governance</span>

@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="flex flex-row justify-between py-[43px] px-[34px]">
       <div className="flex items-center font-medium">
         <img alt="logo" src={logo} className="w-[50px]" />
-        <p className="text-[25px]">Union</p>
+        <p className="text-[25px]">Wrapped Domains</p>
       </div>
       <div className="flex flex-row gap-x-6 items-center">
         {/* <p className="text-navColor invisible sm:visible text-navSize leading-6">
