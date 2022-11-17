@@ -89,15 +89,15 @@ function App() {
   ];
 
   return (
-    <div className="flex justify-center tracking-tighter px-[10px]">
-      <div className="font-sans max-w-[944px] w-[100%]">
+    <div className="flex justify-center tracking-tighter px-[10px] textFont">
+      <div className="font-sans max-w-[944px] w-[100%] textFont">
         <Navbar />
         <div className="flex flex-col gap-y-6 max-w-[605px] w-[100%] mx-auto items-center">
           <img alt="img1" src={imgOne}></img>
           <p className="text-[36px] font-medium text-[#44403c] text-center textFont">
             The global web3 domains protocol
           </p>
-          <p className="text-center text-[#78716c] leading-6">
+          <p className="text-center text-[#78716c] leading-6 textFont">
             WENS has a simple mission of providing a decentralized and yet
             affordable way to map domain names (represented as .WETH) to
             on-chain data. Where on-chain data can be anything from a Ethereum
@@ -280,7 +280,7 @@ function App() {
           FAQs
         </h1>
         {/* <div className="flex flex-col sm:flex-row"> */}
-        <div className="px-[20px]">
+        <div className="px-[20px] textFont">
           {accordions.map((accordion, index) => (
             <Accordion open={open === index + 1} key={index}>
               <AccordionHeader onClick={() => handleOpen(index + 1)}>
