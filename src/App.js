@@ -6,6 +6,8 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 
+import "@fontsource/poppins";
+
 import "./App.css";
 import imgOne from "./assets/img/main.png";
 import openImg from "./assets/img/open.png";
@@ -92,7 +94,7 @@ function App() {
         <Navbar />
         <div className="flex flex-col gap-y-6 max-w-[605px] w-[100%] mx-auto items-center">
           <img alt="img1" src={imgOne}></img>
-          <p className="text-[36px] font-medium text-[#44403c] text-center">
+          <p className="text-[36px] font-medium text-[#44403c] text-center textFont">
             The global web3 domains protocol
           </p>
           <p className="text-center text-[#78716c] leading-6">
@@ -146,14 +148,14 @@ function App() {
           <h1 className="text-[#3b82f6] font-medium text-[20px]">
             Credit is...
           </h1>
-          <h1 className="text-[36px] text-[#44403c] my-[8px] font-medium text-center leading-tight">
+          <h1 className="text-[36px] text-[#44403c] my-[8px] font-sans font-medium text-center leading-tight textFont">
             “Exchanging present value for the possibility of future value”
           </h1>
         </div>
         <div className="flex max-w-[650px] mx-auto">
           <img src={people} alt="people" className="w-[100%]" />
         </div>
-        <h1 className="mt-[8px] font-normal text-[36px] text-[#44403c] leading-tight text-center">
+        <h1 className="mt-[8px] font-normal text-[36px] text-[#44403c] leading-tight text-center textFont">
           No credit score, just your friend circle
         </h1>
         <div className="flex flex-col items-center max-w-[470px] mx-auto my-0">
@@ -162,7 +164,7 @@ function App() {
             access to credit whenever you need it
           </p>
         </div>
-        <h1 className="mt-[196px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c]">
+        <h1 className="mt-[196px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c] textFont">
           Credit is more fluid with Union
         </h1>
         <div className="flex flex-col max-w-[560px] mx-auto">
@@ -227,7 +229,7 @@ function App() {
             </button>
           </div>
         </div>
-        <h1 className="mt-[146px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c]">
+        <h1 className="mt-[146px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c] textFont">
           Get started with Union
         </h1>
         <div className="flex flex-col sm:flex-row">
@@ -274,7 +276,7 @@ function App() {
             </button>
           </Card>
         </div>
-        <h1 className="mt-[146px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c]">
+        <h1 className="mt-[146px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c] textFont">
           FAQs
         </h1>
         {/* <div className="flex flex-col sm:flex-row"> */}

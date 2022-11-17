@@ -10,3 +10,7 @@
     @apply rounded-xl mt-[16px] w-[100%] min-h-[48px] text-[14px] px-[24px] py-[12px] h-[24px];
   }
 }
+
+.textFont {
+  font-family: "Poppins";
+}
