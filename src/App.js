@@ -229,7 +229,7 @@ function App() {
             </button>
           </div>
         </div>
-        <h1 className="mt-[146px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c] textFont">
+        <h1 className="mt-[146px] mb-[40px] text-center font-normal text-[36px] leading-10 text-[#44403c] textFont">
           Get started with Wrapped Domains
         </h1>
         <div className="flex flex-col sm:flex-row">

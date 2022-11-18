@@ -14,3 +14,12 @@
 .textFont {
   font-family: "Poppins";
 }
+
+.card-zoom {
+  transition: transform .3s;
+}
+
+.card-zoom:hover {
+  transform: scale(1.1);
+  border-color: black;
+}
