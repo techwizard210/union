@@ -146,7 +146,7 @@ function App() {
         </div>
         <div className="flex flex-col max-w-[410px] mt-[162px] mb-[120px] mx-auto items-center">
           <h1 className="text-[#3b82f6] font-medium text-[20px]">
-            Credit is...
+            WENS is...
           </h1>
           <h1 className="text-[36px] text-[#44403c] my-[8px] font-sans font-medium text-center leading-tight textFont">
             “Create an online identity and become a part of the metaverse”
