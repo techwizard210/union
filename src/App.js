@@ -36,19 +36,19 @@ function App() {
 
   let array = [
     {
-      str: "From one friend to another, from a parent to their child or from a business to an individual",
+      str: "Send cryptocurrencies to your friend’s wrapped domain.",
       path: oneToOne,
     },
     {
-      str: "A contract or DAO to it’s members, a professional underwriter to clients or a VC to startups",
+      str: "Make payments to DAOs and Crowdfunds with wrapped domains",
       path: oneToMany,
     },
     {
-      str: "Many people investing in a startup, smart contract/DAO or Crowdfunding",
+      str: "Incentivize your liquidity providers and stakers using wrapped domains",
       path: manyToOne,
     },
     {
-      str: "From members of one DAO to another, a sorority as a credit union, friends and family as a bank",
+      str: "Create an ecosystem of multiple web2 and web3 projects with Wrapped domains interconnected with one another",
       path: manyToMany,
     },
   ];
@@ -56,27 +56,27 @@ function App() {
   let accordions = [
     {
       header: "Whats wrapped domains?",
-      body: "",
+      body: "Wrapped Domains is a web3 naming system built on the Ethereum blockchain for mapping cryptocurrency addresses to human-readable names such as ‘kevin.weth’ and providing web2 domains to individuals through the blockchain.",
     },
     {
       header: "Is Wrapped Domains a web3 or web2 service?",
-      body: "",
+      body: "Wrapped Domains is a web3 domain naming system that can also be used for creating web2 websites",
     },
     {
       header: "How much are wrapped domains?",
-      body: "",
+      body: "That’s for you to decide",
     },
     {
       header: "Why are names registered as hashes?",
-      body: "",
+      body: "By default, addresses are recognized by the blockchain and not names which is why names must be converted to valid addresses using a namehash mapping",
     },
     {
       header: "Which wallets and dapps support Wrapped Domains so far?",
-      body: "",
+      body: "This is also for you to specify",
     },
     {
       header: "Why should I use a .weth address?",
-      body: "",
+      body: ".weth allows you to create an identity on the web and receive payments easily from others who have your .weth name",
     },
     {
       header: "Will I be charged annually for my .weth domain?",
@@ -149,7 +149,7 @@ function App() {
             Credit is...
           </h1>
           <h1 className="text-[36px] text-[#44403c] my-[8px] font-sans font-medium text-center leading-tight textFont">
-            “Exchanging present value for the possibility of future value”
+            “Create an online identity and become a part of the metaverse”
           </h1>
         </div>
         <div className="flex max-w-[650px] mx-auto">
@@ -165,7 +165,7 @@ function App() {
           </p>
         </div>
         <h1 className="mt-[196px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c] textFont">
-          Credit is more fluid with Wrapped Domains
+          Payment is more fluid with wrapped domains
         </h1>
         <div className="flex flex-col max-w-[560px] mx-auto">
           <img
@@ -239,8 +239,8 @@ function App() {
               Become a Wrapped Domains member
             </p>
             <p className="text-center px-[30px] text-[16px] text-[#787172] mb-[8px]">
-              Get vouches to borrow, lend to friends and vote to define the
-              future of Wrapped Domains.
+              Own multiple Wrapped Domains in the form of ERC-1155 NFTs and
+              perform batch transactions when transferring
             </p>
             <button
               onClick={(e) => setLargeTab(0)}
@@ -260,8 +260,7 @@ function App() {
               Start building with Wrapped Domains
             </p>
             <p className="text-center px-[30px] text-[16px] text-[#787172] mb-[8px]">
-              Build credit reliant financial tools on top of Ethereum’s
-              crypto-native credit protocol
+              Build your portfolio or business website using Wrapped Domains
             </p>
             <button
               onClick={(e) => setLargeTab(1)}
