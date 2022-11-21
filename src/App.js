@@ -80,7 +80,7 @@ function App() {
     },
     {
       header: "Will I be charged annually for my .weth domain?",
-      body: "",
+      body: "No. You pay once and you don't have to pay again for life.",
     },
     {
       header: "How can I sell my .weth web3 domain?",
@@ -147,7 +147,7 @@ function App() {
         <div className="flex flex-col max-w-[410px] mt-[162px] mb-[120px] mx-auto items-center">
           <h1 className="text-[#3b82f6] font-medium text-[20px]">WENS is...</h1>
           <h1 className="text-[36px] text-[#44403c] my-[8px] font-sans font-medium text-center leading-tight textFont">
-            “Create an online identity and become a part of the metaverse”
+            “Creating an online identity and becoming a part of the metaverse”
           </h1>
         </div>
         <div className="flex max-w-[650px] mx-auto">
@@ -158,8 +158,8 @@ function App() {
         </h1>
         <div className="flex flex-col items-center max-w-[470px] mx-auto my-0">
           <p className="mt-[8px] mb-[8px] text-[#787172] leading-6 text-center">
-            Gain trust from your friends, build up your credit line and gain
-            access to credit whenever you need it
+            Domain names are distributed across multiple servers with the help
+            of IPFS
           </p>
         </div>
         <h1 className="mt-[196px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c] textFont">
