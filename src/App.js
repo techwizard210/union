@@ -145,9 +145,7 @@ function App() {
           </Card>
         </div>
         <div className="flex flex-col max-w-[410px] mt-[162px] mb-[120px] mx-auto items-center">
-          <h1 className="text-[#3b82f6] font-medium text-[20px]">
-            WENS is...
-          </h1>
+          <h1 className="text-[#3b82f6] font-medium text-[20px]">WENS is...</h1>
           <h1 className="text-[36px] text-[#44403c] my-[8px] font-sans font-medium text-center leading-tight textFont">
             “Create an online identity and become a part of the metaverse”
           </h1>
@@ -156,7 +154,7 @@ function App() {
           <img src={people} alt="people" className="w-[100%]" />
         </div>
         <h1 className="mt-[8px] font-normal text-[36px] text-[#44403c] leading-tight text-center textFont">
-          No credit score, just your friend circle
+          Compatible with IPFS
         </h1>
         <div className="flex flex-col items-center max-w-[470px] mx-auto my-0">
           <p className="mt-[8px] mb-[8px] text-[#787172] leading-6 text-center">
