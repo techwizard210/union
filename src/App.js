@@ -309,7 +309,13 @@ function App() {
         <div className="flex justify-center gap-x-10 mt-[20px] mb-[80px] text-[13px] text-[#c4c4c4]">
           <span>Github</span>
           <span>Discord</span>
-          <aspan>Twitter</aspan>
+          <a
+            href="https://twitter.com/wrapped_domains"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span>Twitter</span>
+          </a>
           <span>Medium</span>
         </div>
       </div>
