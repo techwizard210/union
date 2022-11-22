@@ -60,11 +60,11 @@ function App() {
     },
     {
       header: "Is Wrapped Domains a web3 or web2 service?",
-      body: "Wrapped Domains is a web3 domain naming system that can also be used for creating web2 websites",
+      body: "Wrapped Domains is a web3 domains naming system that can also be used for creating web2 websites",
     },
     {
       header: "How much are wrapped domains?",
-      body: "That’s for you to decide",
+      body: "All wrapped domains cost 5$ paid in ETH without any hidden fees.",
     },
     {
       header: "Why are names registered as hashes?",
@@ -72,7 +72,7 @@ function App() {
     },
     {
       header: "Which wallets and dapps support Wrapped Domains so far?",
-      body: "This is also for you to specify",
+      body: "So far we have integrated EthBlocks explorer with our service and we are working on 3 more integrations by the end of the year.",
     },
     {
       header: "Why should I use a .weth address?",
@@ -80,7 +80,7 @@ function App() {
     },
     {
       header: "Will I be charged annually for my .weth domain?",
-      body: "No. You pay once and you don't have to pay again for life.",
+      body: "No , wrapped domains are one time payment service.",
     },
     {
       header: "How can I sell my .weth web3 domain?",
