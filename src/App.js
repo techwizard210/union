@@ -240,17 +240,23 @@ function App() {
               Own multiple Wrapped Domains in the form of ERC-1155 NFTs and
               perform batch transactions when transferring
             </p>
-            <button
-              onClick={(e) => setLargeTab(0)}
-              className={
-                "btnLarge" +
-                (largeTab === 0
-                  ? " bg-[#2563eb] text-[#fff]"
-                  : " bg-[#fff] text-[#000]")
-              }
+            <a
+              href="https://wrapped-nameservice.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
             >
-              Open App
-            </button>
+              <button
+                onClick={(e) => setLargeTab(0)}
+                className={
+                  "btnLarge" +
+                  (largeTab === 0
+                    ? " bg-[#2563eb] text-[#fff]"
+                    : " bg-[#fff] text-[#000]")
+                }
+              >
+                Open App
+              </button>
+            </a>
           </Card>
           <Card>
             <img alt="card" src={start} className="h-[106px] w-auto" />
@@ -260,17 +266,23 @@ function App() {
             <p className="text-center px-[30px] text-[16px] text-[#787172] mb-[8px]">
               Build your portfolio or business website using Wrapped Domains
             </p>
-            <button
-              onClick={(e) => setLargeTab(1)}
-              className={
-                "btnLarge" +
-                (largeTab === 1
-                  ? " bg-[#2563eb] text-[#fff]"
-                  : " bg-[#fff] text-[#000]")
-              }
+            <a
+              href="https://docs.wrapped.domains/"
+              target="_blank"
+              rel="noreferrer"
             >
-              Build with Wrapped Domains
-            </button>
+              <button
+                onClick={(e) => setLargeTab(1)}
+                className={
+                  "btnLarge" +
+                  (largeTab === 1
+                    ? " bg-[#2563eb] text-[#fff]"
+                    : " bg-[#fff] text-[#000]")
+                }
+              >
+                Build with Wrapped Domains
+              </button>
+            </a>
           </Card>
         </div>
         <h1 className="mt-[146px] mb-[24px] text-center font-normal text-[36px] leading-10 text-[#44403c] textFont">
